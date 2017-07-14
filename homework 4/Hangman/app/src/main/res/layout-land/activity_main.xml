@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    android:background="@drawable/green_background">
+
+    <TextView
+        android:text="@string/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHintName"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/letters"
+        android:layout_alignStart="@+id/letters" />
+
+    <TextView
+        android:text="@string/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txrChooseALetter"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:layout_marginStart="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHint"
+        android:fontFamily="casual"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="normal|italic"
+        android:layout_alignBaseline="@+id/txtHintName"
+        android:layout_alignBottom="@+id/txtHintName"
+        android:layout_toEndOf="@+id/txtHintName"
+        android:layout_marginStart="13dp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:id="@+id/letters"
+        android:layout_weight="0.06"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/txrChooseALetter"
+        android:layout_marginEnd="8dp">
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnA"
+            android:text="@string/a"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnB"
+            android:text="@string/b"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnC"
+            android:text="@string/c"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnK"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:text="@string/k"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnL"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:text="@string/l"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnM"
+            android:text="@string/m"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnZ"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/gridLayout"
+            android:textAlignment="center"
+            android:text="@string/z"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textCapCharacters|textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnF"
+            android:text="@string/f"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnG"
+            android:text="@string/g"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnH"
+            android:text="@string/h"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnI"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:textAlignment="center"
+            android:text="@string/i"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnJ"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:textAlignment="center"
+            android:text="@string/j"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnE"
+            android:text="@string/e"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:textAlignment="center"
+            android:layout_below="@+id/txrChooseALetter"
+            android:layout_toEndOf="@+id/letters"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnN"
+            android:text="@string/n"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnO"
+            android:text="@string/o"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="2"
+            android:layout_column="4"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnP"
+            android:text="@string/p"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnQ"
+            android:text="@string/q"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnR"
+            android:text="@string/r"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnS"
+            android:text="@string/s"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnT"
+            android:text="@string/t"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="3"
+            android:layout_column="4"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnW"
+            android:text="@string/w"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnX"
+            android:text="@string/x"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnU"
+            android:text="@string/u"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnV"
+            android:text="@string/v"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnY"
+            android:layout_row="4"
+            android:layout_column="4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/gridLayout"
+            android:textAlignment="center"
+            android:text="@string/y"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+        <Button
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/btnD"
+            android:text="@string/d"
+            android:layout_below="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:visibility="visible" />
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:id="@+id/relHangman"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/left_arm"
+            android:id="@+id/left_arm"
+            android:layout_above="@+id/left_leg"
+            android:layout_alignStart="@+id/left_leg"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/left_leg"
+            android:id="@+id/left_leg"
+            android:layout_marginTop="43dp"
+            android:layout_below="@+id/right_arm"
+            android:layout_alignEnd="@+id/body"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/head"
+            android:id="@+id/head"
+            android:layout_marginLeft="134dp"
+            android:layout_marginTop="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/left_leg"
+            android:id="@+id/right_arm"
+            android:layout_below="@+id/head"
+            android:layout_alignStart="@+id/body"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/body"
+            android:id="@+id/body"
+            android:layout_marginLeft="134dp"
+            android:layout_alignBottom="@+id/left_leg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="49dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/right_leg"
+            android:id="@+id/right_leg"
+            android:layout_alignBottom="@+id/left_leg"
+            android:layout_alignEnd="@+id/right_arm"
+            android:visibility="invisible" />
+
+        <TextView
+            android:text="_ _ _ _ "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWordLand"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
